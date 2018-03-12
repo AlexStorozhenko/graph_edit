@@ -17,7 +17,7 @@ public abstract class CoordinateFigure extends BaseFigure {
         this.coordinateList = coordinateList;
     }
 
-    protected List<CoordinateDTO> getCoordinateList() {
+    public List<CoordinateDTO> getCoordinateList() {
         return coordinateList;
     }
 }

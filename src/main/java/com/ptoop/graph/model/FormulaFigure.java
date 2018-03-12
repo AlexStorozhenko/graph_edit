@@ -20,4 +20,16 @@ public abstract class FormulaFigure extends BaseFigure{
         this.valuesMap = valuesMap;
         this.formula = formula;
     }
+
+    public String getFormula() {
+        return formula;
+    }
+
+    public CoordinateDTO getCenter() {
+        return center;
+    }
+
+    public Map<String, Integer> getValuesMap() {
+        return valuesMap;
+    }
 }
