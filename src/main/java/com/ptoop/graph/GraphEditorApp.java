@@ -2,9 +2,6 @@ package com.ptoop.graph;
 
 import com.ptoop.graph.command.*;
 import com.ptoop.graph.model.BaseFigure;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,8 +16,8 @@ import static com.ptoop.graph.service.DrawFigureService.drawFigure;
  * @author: Alexey Storozhenko
  * @since: 09.03.2018
  */
-@SpringBootApplication
-public class GraphEditorApp implements CommandLineRunner {
+
+public class GraphEditorApp{
 
     private static BufferedReader br = null;
     private static final Map<String, AbstractCommand> commandMap = createMap();
@@ -39,11 +36,6 @@ public class GraphEditorApp implements CommandLineRunner {
     }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(GraphEditorApp.class, args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
         System.out.println("  -----  Graphical editor  -----  ");
         System.out.println("");
         try {

@@ -4,7 +4,6 @@ import com.ptoop.graph.model.LineFigure;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * @author: Alexey Storozhenko
